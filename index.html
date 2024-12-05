@@ -1,5 +1,78 @@
 <!DOCTYPE html>
 
+
+
+
+<html>
+  <head>
+    <head>
+          <img src ="download.png" alt="SurreyUniLogoBanner" width-"558.5" height="132">
+      <h1><b>ENG0018 Computer Laboratory 2024/25</b><h1>
+<h2>
+<p>Student URN: <span style="color:blue;font-weight:bold">6884790</span>
+</h2>
+        <hr>
+          <h2 style=”font-family:calibri:”><b>Conference Paper: Variable Valve Control in Internal Combustion Engines: VVT, VVD, and FreeValve Technology </b></h2>
+        </hr>
+        <link rel="stylesheet" type="text/css" href="mystyle.css"> 
+    </head>
+
+  </head>
+        <p class="ex1">
+          <pre>
+            This paper presents a novel adaptive active learning strategy. The most accurate classification model from a heterogeneous 
+            classifier pool is selected at each learning epoch. Our goal is to achieve greater incremental improvement in accuracy, compared 
+            to using a single type of classification model throughout the process. The strategy is evaluated on benchmark data sets. 
+            We further consider an application to texture classification problems in sonar mosaic imagery and compare it with non-adaptive 
+            active learning and traditional machine learning approaches. Our results show that... We conclude that...
+           </pre>
+        </p>
+
+</html>
+
+
+
+
+        
+<p id="date&time"></p><script>//Javascript to display the date and time on my webpageconst d = new Date();document.getElementById("date&time").innerHTML = d;</script>
+
+
+
+ <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- ////////////////////////////// Word count function ////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+<!-- Placeholder for total word count -->
+<p id="totalWordCount"></p>
+<hr>
+<script>
+  // Function to calculate and display word count for a specified section
+  function displayWordCount(sectionId, outputId) {
+    // Get the text content from the specified section
+    const text = document.getElementById(sectionId).textContent;
+    // Split text into words based on spaces and filter out any empty strings
+    const wordArray = text.trim().split(/\s+/);
+    // Count the words
+    const wordCount = wordArray.length;
+    // Return the word count for summing purposes
+    return wordCount;
+  }
+  // Function to calculate and display total word count from selected sections
+  function displayTotalWordCount() {
+    // Calculate word count for each section and accumulate the total
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
+    // Calculate the sum of all selected sections
+    const totalWordCount = IntroductionCount + AnalysisCount;
+    // Display the total word count
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+  // Run the function for specific sections and display total count when the page loads
+  window.onload = displayTotalWordCount;
+</script>
+
+
+
+        
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
@@ -50,63 +123,3 @@
 </script>
 
 
-<p id="date&time"></p><script>//Javascript to display the date and time on my webpageconst d = new Date();document.getElementById("date&time").innerHTML = d;</script>
-
- <!-- //////////////////////////////////////////////////////////////////////////////// -->
-  <!-- ////////////////////////////// Word count function ////////////////////////////// -->
-  <!-- //////////////////////////////////////////////////////////////////////////////// -->
-<!-- Placeholder for total word count -->
-<p id="totalWordCount"></p>
-<hr>
-<script>
-  // Function to calculate and display word count for a specified section
-  function displayWordCount(sectionId, outputId) {
-    // Get the text content from the specified section
-    const text = document.getElementById(sectionId).textContent;
-    // Split text into words based on spaces and filter out any empty strings
-    const wordArray = text.trim().split(/\s+/);
-    // Count the words
-    const wordCount = wordArray.length;
-    // Return the word count for summing purposes
-    return wordCount;
-  }
-  // Function to calculate and display total word count from selected sections
-  function displayTotalWordCount() {
-    // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
-    // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
-    // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
-  }
-  // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
-</script>
-
-<html>
-  <head>
-    <head>
-          <img src ="download.png" alt="SurreyUniLogoBanner" width-"558.5" height="132">
-      <h1><b>ENG0018 Computer Laboratory 2024/25</b><h1>
-<h2>
-<p>Student URN: <span style="color:blue;font-weight:bold">6884790</span>
-</h2>
-        <hr>
-          <h2 style=”font-family:calibri:”><b>Conference Paper: Variable Valve Control in Internal Combustion Engines: VVT, VVD, and FreeValve Technology </b></h2>
-        </hr>
-        <link rel="stylesheet" type="text/css" href="mystyle.css"> 
-    </head>
-
-  </head>
-        <p class="ex1">
-          <pre>
-            This paper presents a novel adaptive active learning strategy. The most accurate classification model from a heterogeneous 
-            classifier pool is selected at each learning epoch. Our goal is to achieve greater incremental improvement in accuracy, compared 
-            to using a single type of classification model throughout the process. The strategy is evaluated on benchmark data sets. 
-            We further consider an application to texture classification problems in sonar mosaic imagery and compare it with non-adaptive 
-            active learning and traditional machine learning approaches. Our results show that... We conclude that...
-           </pre>
-        </p>
-
-</html>
