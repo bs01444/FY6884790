@@ -239,7 +239,7 @@ style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></
 </a></h2>
 
 <h2>&nbsp;</h2>
-
+<section id = "p1">
 <h2><a name="_Toc184369354">Abstract</a></h2>
 
 <p class=MsoNormal><b>&nbsp;</b></p>
@@ -258,7 +258,7 @@ fuel interact in the combustion chamber, maximising volumetric efficiency and
 performance.</p>
 
 <p class=MsoNormal>The following sections will briefly outline these solutions.</p>
-
+</section>
 <p class=MsoNormal>&nbsp;</p>
 
 <div class=MsoNormal align=center style='text-align:center'>
@@ -268,7 +268,7 @@ performance.</p>
 </div>
 
 <h2>&nbsp;</h2>
-
+<section id = "p2">
 <h2><a name="_Toc184369355">1. Fundamentals of Valve Control in Internal
 Combustion Engines</a></h2>
 
@@ -379,7 +379,7 @@ and VVL means that theoretically perfect volumetric efficiency can be achieved
 throughout the rev-range of an engine. The sustainability and economical
 benefits to this are unprecedented in ICEs, meaning this technology is a great
 way to prolong the lifespan of ICE vehicles.</p>
-
+</section>
 <p class=MsoNormal>&nbsp;</p>
 
 <div class=MsoNormal align=center style='text-align:center'>
@@ -389,7 +389,7 @@ way to prolong the lifespan of ICE vehicles.</p>
 </div>
 
 <h2>&nbsp;</h2>
-
+<section id = "p3">
 <h2><a name="_Toc184369356">2. The Issue with Traditional Systems</a></h2>
 
 <p class=MsoNormal>&nbsp;</p>
@@ -413,7 +413,7 @@ parasitic loss.</p>
 <p class=MsoNormal>Another disadvantage of a camshaft-based system is that
 there is high rotational inertia from the heavy and wide camshaft. The force
 needed to rotate this also results in parasitic losses.</p>
-
+</section>
 <p class=MsoNormal>&nbsp;</p>
 
 <div class=MsoNormal align=center style='text-align:center'>
@@ -423,7 +423,7 @@ needed to rotate this also results in parasitic losses.</p>
 </div>
 
 <h2>&nbsp;</h2>
-
+<section id = "p4">
 <h2><a name="_Toc184369357">3. Comparative Analysis</a></h2>
 
 <table class=MsoNormalTable border=0 cellpadding=0 align=left style='margin-left:
@@ -553,7 +553,7 @@ needed to rotate this also results in parasitic losses.</p>
 
 <p class=MsoNormal><br clear=all>
 </p>
-
+</section>
 <div class=MsoNormal align=center style='text-align:center'>
 
 <hr size=2 width="100%" align=center>
@@ -561,7 +561,7 @@ needed to rotate this also results in parasitic losses.</p>
 </div>
 
 <h2>&nbsp;</h2>
-
+<section id = "p5">
 <h2><a name="_Toc184369358">4. Applications and Future Outlook</a></h2>
 
 <p class=MsoNormal>&nbsp;</p>
@@ -596,7 +596,7 @@ efficiency and performance. </p>
 even more innovation, leading to improvements in all relevant engineering industries.</p>
 
 <p class=MsoNormal style='margin-left:72.0pt'>&nbsp;</p>
-
+</section>
 <div class=MsoNormal align=center style='text-align:center'>
 
 <hr size=2 width="100%" align=center>
@@ -604,7 +604,7 @@ even more innovation, leading to improvements in all relevant engineering indust
 </div>
 
 <h2>&nbsp;</h2>
-
+<section id = "p6">
 <h2><a name="_Toc184369359">5. Conclusion</a></h2>
 
 <p class=MsoNormal>Valve control technologies and their development are
@@ -619,7 +619,7 @@ not just for the automotive industry, but all mechanical engineering sectors.</p
 <p class=MsoNormal>By embracing these technologies, automakers can achieve
 better performance and reduced negative environmental impact, ensuring the ICE
 remains relevant in a rapidly evolving automotive landscape.</p>
-
+</section>
 <p class=MsoNormal>&nbsp;</p>
 
 <div class=MsoNormal align=center style='text-align:center'>
@@ -688,10 +688,14 @@ href="https://www.researchgate.net/publication/369941899_Freevalve_Control_and_O
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("1. Fundamentals of Valve Control in Internal Combustion Engines");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const p1Count = displayWordCount("p1");
+    const p2Count = displayWordCount("p2");
+	  const p3Count = displayWordCount("p3");
+	  const p4Count = displayWordCount("p4");
+	  const p5Count = displayWordCount("p5");
+	  const p6Count = displayWordCount("p6");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = p1 + p2 + p3 + p4 + p5 + p6;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
